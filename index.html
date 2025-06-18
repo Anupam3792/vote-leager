@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoteLedger - Decentralized Voting Platform</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-black">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-vote-yea me-2"></i>VoteLedger
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="ms-auto">
+                    <button class="btn btn-warning btn-connect-wallet" id="connectWalletBtn">Connect Wallet</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <!-- Hero Section -->
+    <section class="hero-section d-flex justify-content-center align-items-center text-light hero-bg"
+    style="background-image: url('https://png.pngtree.com/background/20230618/original/pngtree-illustration-of-blockchain-and-cryptocurrency-technology-in-3d-rendering-picture-image_3757355.jpg');
+           background-size: cover; 
+           background-position: center top; 
+           background-repeat: no-repeat; 
+           overflow: hidden;">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h1 class="display-1 fw-bold mb-2">  <!-- Reduced margin-bottom -->
+            Welcome to <span class="text-warning">VoteLedger</span>
+          </h1>
+          <p class="lead mb-2 fw-bold ">  <!-- Reduced margin-bottom -->
+            A secure, transparent, and decentralized voting platform powered by 
+            <strong>blockchain technology</strong>.
+          </p>
+          <a href="home.html" class="btn btn-warning btn-lg px-4 pt-2 mt-5 fw-bold shadow mb-2">Launch App</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <div class="container rounded py-2 ">
+    <div class="row align-items-center">
+      
+      <!-- Text Side -->
+      <div class="col-md-6">
+        <h2 class="text-warning py-3">About VoteLedger</h2>
+        <p class="text-light">
+          This project introduces VoteLedger, a decentralized voting platform aimed at improving electoral security, transparency, and efficiency. By leveraging blockchain's immutable ledger and smart contracts, the system ensures tamper-proof voting records and automates key processes. The platform enables real-time vote tallying and public auditability without compromising voter anonymity. Its user-friendly interface and robust backend architecture make it suitable for institutions, organizations, and government-level elections.
+        </p>
+      </div>
+
+      <!-- Image Side -->
+      <div class="col-md-6 text-center">
+        <dotlottie-player
+        src="https://lottie.host/bc0d81f4-661a-4de6-b752-ccebce5e6bc0/NkrDyg2JHj.lottie"
+        background="transparent"
+        speed="1"
+        style="width: 300px; height: 400px"
+        loop
+        autoplay
+      ></dotlottie-player>      </div>
+
+    </div>
+  </div>
+  
+   <!-- Centered Lottie Animation -->
+                  <!-- <div class="d-flex justify-content-center">
+                    <dotlottie-player
+                      src="https://lottie.host/bc0d81f4-661a-4de6-b752-ccebce5e6bc0/NkrDyg2JHj.lottie"
+                      background="transparent"
+                      speed="1"
+                      style="width: 400px; height: 400px"
+                      loop
+                      autoplay
+                    ></dotlottie-player>
+                  </div> -->
+
+    <!-- Features Section -->
+    <section  class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 text-warning">Why Choose VoteLedger?</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="fas fa-shield-alt feature-icon"></i>
+                        <h3>Secure</h3>
+                        <p>Blockchain-powered security ensures your vote remains tamper-proof.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="fas fa-link feature-icon"></i>
+                        <h3>Transparent</h3>
+                        <p>Every vote is recorded on the blockchain for complete transparency.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="fas fa-user-shield feature-icon"></i>
+                        <h3>Private</h3>
+                        <p>Your identity remains protected while ensuring vote authenticity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class=" bg-warning py-2 mb-5">
+        <div class="banner text-center text-black font-weight-bold py-3">
+            <h4>Transparent Voting: A Step Towards Fairness</h4>
+            <p>Vote with confidence and transparency. Your voice matters!</p>
+        </div>
+    </div>
+
+    <div class="container py-5">
+        <div class="text-center mb-5">
+          <h2 class="text-warning">Our Mission & Vision</h2>
+          <p class="text-light">What drives us at Vote Lezzer</p>
+        </div>
+    
+        <div class="row g-4">
+          <!-- Mission Card -->
+          <div class="col-md-6">
+            <div class="card bg-secondary text-light border-0 shadow h-100">
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-3">
+                  <i class="bi bi-bullseye text-warning fs-2 me-3"></i>
+                  <h5 class="card-title text-warning mb-0">Mission</h5>
+                </div>
+                <p class="card-text">
+                  To empower every individual with the right to express, engage, and influence democratic processes through secure and accessible voting solutions.
+                </p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Vision Card -->
+          <div class="col-md-6">
+            <div class="card bg-secondary text-light border-0 shadow h-100">
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-3">
+                  <i class="bi bi-eye text-warning fs-2 me-3"></i>
+                  <h5 class="card-title text-warning mb-0">Vision</h5>
+                </div>
+                <p class="card-text">
+                  To create a future where technology bridges the gap between citizens and governance, enabling transparency, trust, and active civic participation across the globe.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container py-5">
+        <div class="text-center mb-5">
+          <h2 class="text-warning">Frequently Asked Questions</h2>
+          <p class="text-light">Everything you need to know about Vote Lezzer</p>
+        </div>
+    
+        <div class="accordion" id="faqAccordion">
+
+            <!-- FAQ 1 -->
+            <div class="accordion-item bg-black">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button text-light bg-black" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  What is VoteLedgerr?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-light">
+                  VoteLedger is a digital voting platform that allows people to participate in secure and transparent polls and elections.
+                </div>
+              </div>
+            </div>
+          
+            <!-- FAQ 2 -->
+            <div class="accordion-item bg-black">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed text-light bg-black" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Is my vote secure and anonymous?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-light">
+                  Yes, all votes are encrypted and recorded securely without revealing your identity.
+                </div>
+              </div>
+            </div>
+          
+            <!-- FAQ 3 -->
+            <div class="accordion-item bg-black">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed text-light bg-black" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Who can create polls?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-light">
+                  Verified users or organizations can create public or private polls using our dashboard.
+                </div>
+              </div>
+            </div>
+          
+            <!-- FAQ 4 -->
+            <div class="accordion-item bg-black">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed text-light bg-black" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Is there a mobile app available?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-light">
+                  Yes, Vote Lezzer is available on both Android and iOS platforms for easy access.
+                </div>
+              </div>
+            </div>
+          
+            <!-- FAQ 5 -->
+            <div class="accordion-item bg-black">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed text-light bg-black" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  How can I contact support?
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-light">
+                  You can contact our team at <strong>support@votelezzer.com</strong> or use the in-app support chat anytime.
+                </div>
+              </div>
+            </div>
+          
+          </div>
+          
+      </div>
+
+      <div class="bg-warning py-4 px-3 mb-5">
+        <div class="container">
+          <div class="row align-items-center">
+            
+            <!-- Text Section -->
+            <div class="col-md-8 text-md-start text-center mb-3 mb-md-0">
+              <h4 class="mb-1 fw-bold">Any further query, contact</h4>
+              <p class="mb-0">Vote with confidence and transparency. Your voice matters!</p>
+            </div>
+      
+            <!-- Button Section -->
+            <div class="col-md-4 text-md-end text-center">
+              <a href="tel:+9876543210" class="btn btn-dark px-4">contact us</a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+    <!-- Footer -->
+    <footer class="bg-black text-light pt-5 pb-4">
+        <div class="container text-md-left">
+          <div class="row text-md-left">
+      
+            <!-- Company Info -->
+            <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+              <h5 class="text-uppercase text-warning mb-4 font-weight-bold">VoteLedger</h5>
+              <p >
+                Your voice matters. VoteLeder empowers digital democracy through secure, easy-to-use voting technology.
+              </p>
+            </div>
+      
+            <!-- Useful Links -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h5 class="text-uppercase text-warning mb-4">Quick Links</h5>
+              <p><a href="index.html" class="text-light text-decoration-none">Home</a></p>
+              <p><a href="login.html" class="text-light text-decoration-none">Login</a></p>
+              <p><a href="vote.html" class="text-light text-decoration-none">Vote Now</a></p>
+              <p><a href="tel:+919876543210" class="text-light text-decoration-none">Contact</a></p>
+
+            </div>
+      
+            <!-- Contact Info -->
+            <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+              <h5 class="text-uppercase text-warning mb-4">Contact</h5>
+              <p class="text-light"><i class="bi bi-envelope me-2"></i> ak9754886@gmail.com</p>
+              <p class="text-light"><i class="bi bi-telephone me-2"></i> +91 9873134920</p>
+              <p class="text-light"><i class="bi bi-geo-alt me-2"></i> Delhi, India</p>
+            </div>
+      
+          </div>
+      
+          <hr class="text-white my-4">
+      
+          <!-- Social & Copyright -->
+          <div class="row align-items-center ">
+            <div class="col-md-7 col-lg-8">
+              <p class="text-muted mb-0">© 2025 VoteLedger. All rights reserved.</p>
+            </div>
+            <div class="col-md-5 col-lg-4 text-md-end">
+              <a href="#" class="text-muted me-3"><i class="https://x.com/Anupam_3792"></i></a>
+              <a href="#" class="text-muted me-3"><i class="https://github.com/Anupam3792"></i></a>
+              <a href="#" class="text-muted me-3"><i class="bi bi-instagram fs-5"></i></a>
+              <a href="#" class="text-muted"><i class="https://www.linkedin.com/in/anupam-kumar-4b6b94261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"></i></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+      <!-- Bootstrap Icons CDN -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+      
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Web3.js -->
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+    <!-- ethers.js -->
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+    function shortAddress(addr) {
+        return addr ? addr.slice(0, 6) + '...' + addr.slice(-4) : '';
+    }
+    document.getElementById('connectWalletBtn').onclick = async function() {
+        if (window.ethereum) {
+            try {
+                const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+                const shortAddr = shortAddress(accounts[0]);
+                this.textContent = shortAddr;
+                this.classList.remove('btn-warning');
+                this.classList.add('btn-success');
+                this.disabled = false;
+            } catch (e) {
+                alert('Wallet connection failed.');
+            }
+        } else {
+            alert('MetaMask not found!');
+        }
+    };
+    </script>
+    <script
+    src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+    type="module"
+  ></script>
+
+ 
+  
+  
+</body>
+</html> 

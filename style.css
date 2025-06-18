@@ -1,0 +1,562 @@
+/* Global Styles */
+:root {
+    --primary-color: #4A90E2;
+    --secondary-color: #2C3E50;
+    --success-color: #27AE60;
+    --background-color: #F8F9FA;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--secondary-color);
+}
+
+/* Hero Section */
+.hero-section {
+    padding-top: 120px;
+    padding-bottom: 80px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Feature Cards */
+.feature-card {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #357ABD;
+    border-color: #357ABD;
+}
+
+.btn-success {
+    background-color: var(--success-color);
+    border-color: var(--success-color);
+}
+
+/* Form Styles */
+.card {
+    border: none;
+    border-radius: 15px;
+}
+
+.form-control {
+    border-radius: 8px;
+    padding: 0.75rem;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(74, 144, 226, 0.25);
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        padding-top: 100px;
+        text-align: center;
+    }
+    
+    .feature-card {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Ongoing Voting Section */
+.ongoing-voting-section {
+    background: #181818;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    max-width: 80vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 56px !important;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+.ongoing-voting-title {
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+.ongoing-voting-table th, .ongoing-voting-table td {
+    color: #fff;
+    background: #222;
+    border: none;
+}
+.ongoing-voting-table th {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.card.bg-dark {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.card.bg-dark:hover {
+    box-shadow: 0 8px 32px rgba(11, 122, 248, 0.18);
+    transform: translateY(-6px) scale(1.025);
+}
+
+.hero-box {
+    background: #222;
+    border-radius: 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    padding: 2.5rem 1.5rem 2rem 1.5rem;
+    margin: 2rem auto 2.5rem auto;
+    max-width: 800px;
+    text-align: center;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+.hero-box:hover {
+    box-shadow: 0 8px 32px rgba(74,144,226,0.15);
+    transform: translateY(-4px) scale(1.02);
+}
+.hero-title {
+    font-family: 'Fira Mono', 'Consolas', 'Courier New', monospace;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.hero-subtitle {
+    color: #bbb;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+.btn-create-voting {
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.7rem 2.2rem;
+    transition: background 0.2s, color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+.btn-create-voting:hover, .btn-create-voting:focus {
+    background: var(--primary-color);
+    color: #fff;
+    transform: scale(1.07);
+    box-shadow: 0 4px 16px rgba(74,144,226,0.18);
+}
+.btn.btn-primary, .btn.btn-secondary {
+    transition: background 0.2s, color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+.btn.btn-primary:hover, .btn.btn-secondary:hover {
+    transform: scale(1.06);
+    box-shadow: 0 4px 16px rgba(74,144,226,0.18);
+    filter: brightness(1.1);
+}
+.navbar .btn-connect-wallet {
+    margin-left: 1rem;
+}
+
+.voting-cards-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+.voting-card {
+    flex: 0 1 calc(33.333% - 3rem);
+    max-width: 50px;
+    min-width: 2px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width: 1200px) {
+    .voting-card {
+        flex: 0 1 calc(50% - 3rem);
+    }
+}
+@media (max-width: 900px) {
+    .hero-box, .ongoing-voting-section, .card.bg-dark {
+        max-width: 98vw;
+        width: 98vw;
+    }
+    .voting-cards-row {
+        gap: 1.5rem;
+    }
+    .voting-card {
+        flex: 0 1 calc(100% - 1.5rem);
+        max-width: 98vw;
+        min-width: 180px;
+    }
+}
+@media (max-width: 600px) {
+    .hero-box {
+        padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+        font-size: 1.1rem;
+    }
+    .hero-title {
+        font-size: 1.3rem;
+    }
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    .voting-cards-row {
+        gap: 1rem;
+    }
+    .voting-card {
+        margin-bottom: 0;
+    }
+}
+
+.navbar-separator {
+    width: 100vw;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary-color) 0%, #fff 100%);
+    box-shadow: 0 2px 8px rgba(74,144,226,0.10);
+    margin-bottom: 0.5rem;
+    border-radius: 0 0 8px 8px;
+}
+.footer-separator {
+    width: 100vw;
+    height: 1px;
+    background: linear-gradient(90deg, var(--primary-color) 0%, #fff 100%);
+    box-shadow: 0 2px 8px rgba(74,144,226,0.10);
+    margin-bottom: 2rem;
+    margin-top: -1.5rem;
+    border-radius: 8px 8px 0 0;
+}
+
+.btn-home.tailwind-home-btn {
+    position: absolute;
+    top: 18px;
+    left: 24px;
+    z-index: 1050;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 8px rgba(74,144,226,0.18);
+    transition: transform 0.18s, filter 0.18s, box-shadow 0.18s;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+}
+.btn-home.tailwind-home-btn:hover, .btn-home.tailwind-home-btn:focus {
+    transform: scale(1.08) translateY(-2px);
+    filter: brightness(1.15);
+    box-shadow: 0 6px 24px rgba(74,144,226,0.22);
+    color: #fff;
+    text-decoration: none;
+}
+@media (max-width: 600px) {
+    .btn-home.tailwind-home-btn {
+        top: 8px;
+        left: 8px;
+        padding: 0.4rem 1rem;
+        font-size: 1rem;
+    }
+}
+
+.home-btn-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.home-btn-gap {
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+/* --- Modern Result Page Hero Section --- */
+.result-hero-box {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(74,144,226,0.10);
+    padding: 2.5rem 1.5rem 2rem 1.5rem;
+    margin: 2rem auto 2.5rem auto;
+    max-width: 700px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+.result-hero-title {
+    font-family: 'Segoe UI', 'Fira Mono', 'Consolas', 'Courier New', monospace;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    letter-spacing: 0.5px;
+    margin-bottom: 0;
+    display: inline-block;
+}
+.result-hero-subtitle {
+    color: #555;
+    font-size: 1.15rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.result-hero-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: linear-gradient(135deg, #4A90E2 60%, #357ABD 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(74,144,226,0.18);
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+    border: 3px solid #e9ecef;
+    transition: box-shadow 0.3s, transform 0.3s;
+    animation: tickPopIn 0.9s cubic-bezier(.68,-0.55,.27,1.55) 0.2s both;
+}
+.result-hero-icon i {
+    color: #fff;
+    font-size: 1.3rem;
+}
+@keyframes tickPopIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.2) rotate(-90deg);
+        filter: blur(2px);
+    }
+    60% {
+        opacity: 1;
+        transform: scale(1.15) rotate(10deg);
+        filter: blur(0);
+    }
+    80% {
+        transform: scale(0.95) rotate(-5deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+        filter: blur(0);
+    }
+}
+.result-hero-box:hover {
+    box-shadow: 0 8px 32px rgba(74,144,226,0.18);
+    transform: translateY(-4px) scale(1.02);
+}
+
+/* --- Animation Classes --- */
+.animate-fade-in {
+    opacity: 0;
+    animation: fadeInAnim 1.1s cubic-bezier(.68,-0.55,.27,1.55) 0.1s forwards;
+}
+@keyframes fadeInAnim {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.animate-slide-up {
+    opacity: 0;
+    animation: slideUpAnim 1.1s cubic-bezier(.68,-0.55,.27,1.55) 0.2s forwards;
+}
+@keyframes slideUpAnim {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Card Spacing and Layout --- */
+.card.bg-dark {
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(74,144,226,0.10);
+    margin-bottom: 2.5rem !important;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+.card.bg-dark:last-child {
+    margin-bottom: 3.5rem !important;
+}
+.card.bg-dark:hover {
+    box-shadow: 0 8px 32px rgba(74,144,226,0.18);
+    transform: translateY(-6px) scale(1.025);
+}
+
+.voting-cards-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem 2.5rem;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+.candidate-card {
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(74,144,226,0.10);
+    transition: box-shadow 0.3s, transform 0.3s;
+    margin-bottom: 0.5rem;
+    background: #fff;
+    color: var(--secondary-color);
+    min-width: 220px;
+    max-width: 320px;
+    flex: 1 1 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.candidate-card:hover {
+    box-shadow: 0 8px 32px rgba(74,144,226,0.18);
+    transform: translateY(-6px) scale(1.025);
+    border-top: 2px solid var(--primary-color);
+}
+
+/* --- Responsive Tweaks --- */
+@media (max-width: 900px) {
+    .result-hero-box, .card.bg-dark {
+        max-width: 98vw;
+        width: 98vw;
+    }
+    .voting-cards-row {
+        gap: 1.5rem 1.5rem;
+    }
+    .candidate-card {
+        flex: 0 1 calc(100% - 1.5rem);
+        max-width: 98vw;
+        min-width: 180px;
+    }
+}
+@media (max-width: 600px) {
+    .result-hero-box {
+        padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+        font-size: 1.1rem;
+    }
+    .result-hero-title {
+        font-size: 1.3rem;
+    }
+    .result-hero-icon {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1rem;
+    }
+    .card.bg-dark {
+        padding: 0.5rem 0.2rem;
+    }
+}
+
+/* --- Subtle Hover for Buttons --- */
+.btn, .btn-connect-wallet {
+    transition: background 0.2s, color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+.btn:hover, .btn-connect-wallet:hover {
+    transform: scale(1.06);
+    box-shadow: 0 4px 16px rgba(74,144,226,0.18);
+    filter: brightness(1.1);
+}
+
+.bg-light-yellow {
+    background: #FFFBEA !important;
+}
+
+/* Modern candidate vote icon */
+.candidate-vote-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #4A90E2 60%, #B2D7FF 100%);
+    box-shadow: 0 2px 8px rgba(74,144,226,0.10);
+    color: #fff;
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+    margin-left: 0.2rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.candidate-vote-icon i {
+    color: #fff;
+    font-size: 1.2rem;
+}
+.candidate-card .candidate-vote-icon {
+    margin-left: 0.5rem;
+}
+.candidate-card .candidate-vote-count {
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin-left: 0.2rem;
+}
+.candidate-card .candidate-vote-label {
+    color: #888;
+    font-size: 0.95rem;
+    margin-left: 0.3rem;
+}
+
+.vote-highlight {
+    background: #fff3cd;
+    color: #111 !important;
+    border-radius: 8px;
+    padding: 0.2em 0.7em;
+    box-shadow: 0 0 8px 2px #ffe066;
+    transition: background 0.7s, color 0.7s, box-shadow 0.7s;
+}
+
+.voting-card:hover {
+    box-shadow: 0 8px 32px rgba(74,144,226,0.18);
+    transform: translateY(-6px) scale(1.025);
+    border-top: 2px solid var(--primary-color);
+}
+
+.wide-candidates-card {
+    max-width: 900px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 1000px) {
+    .wide-candidates-card {
+        max-width: 98vw;
+    }
+}
+@media (max-width: 600px) {
+    .wide-candidates-card {
+        max-width: 100vw;
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+    }
+} 

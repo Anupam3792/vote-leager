@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoteLedger - Results</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body class="bg-black">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black ">
+        <div class="container">
+            <a class="navbar-brand" href="home.html">
+                <i class="fas fa-vote-yea me-2"></i>VoteLedger
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="ms-auto">
+                    <button class="btn btn-warning btn-connect-wallet" id="connectWalletBtn">Connect Wallet</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="navbar-separator"></div>
+
+    <div class="container py-4">
+        <!-- Modern Heading & Subheading with Blue Tick Icon -->
+        <div class="result-hero-box animate-fade-in mb-5 bg-light-yellow">
+            <div class="d-flex align-items-center justify-content-center mb-2">
+                <span class="result-hero-icon d-flex align-items-center justify-content-center me-2">
+                    <i class="fa-solid fa-circle-check"></i>
+                </span>
+                <h1 class="result-hero-title mb-0">Live Voting Results</h1>
+            </div>
+            <p class="result-hero-subtitle text-center mb-0">Track real-time votes and discover the leading candidates in your decentralized election. Transparent. Secure. Instant.</p>
+        </div>
+        <!-- Section 1: Candidates & Votes -->
+        <div class="card bg-dark text-light mb-5 shadow animate-slide-up">
+            <div class="card-body">
+                <h2 class="text-warning mb-4 text-center">Candidates & Votes</h2>
+                <div id="candidatesList" class="voting-cards-row"></div>
+            </div>
+        </div>
+        <!-- Section 2: Winner -->
+        <div class="card bg-dark text-light shadow animate-slide-up mb-5">
+            <div class="card-body">
+                <h2 class="text-warning mb-4 text-center">Winner</h2>
+                <div id="winnerSection" class="text-center">
+                    <div id="winnerContent" class="fs-4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-separator"></div>
+    <footer class="bg-black text-light pt-5 pb-4">
+        <div class="container text-md-left">
+            <div class="row text-md-left">
+                <!-- Company Info -->
+                <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+                    <h5 class="text-uppercase text-warning mb-4 font-weight-bold">VoteLedger</h5>
+                    <p>
+                        Your voice matters. VoteLedger empowers digital democracy through secure, easy-to-use voting technology.
+                    </p>
+                </div>
+                <!-- Useful Links -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase text-warning mb-4">Quick Links</h5>
+                    <p><a href="home.html" class="text-light text-decoration-none">Home</a></p>
+                    <p><a href="login.html" class="text-light text-decoration-none">Login</a></p>
+                    <p><a href="voting.html" class="text-light text-decoration-none">Vote Now</a></p>
+                    <p><a href="tel:+919876543210" class="text-light text-decoration-none">Contact</a></p>
+                </div>
+                <!-- Contact Info -->
+                <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+                    <h5 class="text-uppercase text-warning mb-4">Contact</h5>
+                    <p class="text-light"><i class="bi bi-envelope me-2"></i> ak9754886@gmail.com</p>
+                    <p class="text-light"><i class="bi bi-telephone me-2"></i> +91 9873134920</p>
+                    <p class="text-light"><i class="bi bi-geo-alt me-2"></i> Delhi, India</p>
+                </div>
+            </div>
+            <hr class="text-white my-4">
+            <!-- Social & Copyright -->
+            <div class="row align-items-center ">
+                <div class="col-md-7 col-lg-8">
+                    <p class="text-muted mb-0">© 2025 VoteLedger. All rights reserved.</p>
+                </div>
+                <div class="col-md-5 col-lg-4 text-md-end">
+                    <a href="#" class="text-muted me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-muted me-3"><i class="fab fa-github"></i></a>
+                    <a href="#" class="text-muted me-3"><i class="bi bi-instagram fs-5"></i></a>
+                    <a href="#" class="text-muted"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- ethers.js -->
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+    <!-- Custom JS -->
+    <script src="result.js"></script>
+</body>
+</html> 
